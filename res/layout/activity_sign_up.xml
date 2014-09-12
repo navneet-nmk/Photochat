@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.navneet.photochat.SignUpActivity" >
+
+    <ImageView
+        android:id="@+id/backgrnd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="60sp" />
+
+    <LinearLayout
+        android:id="@+id/editTextSignLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title2"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="6dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="6dp" >
+
+        <EditText
+            android:id="@+id/userName_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/username_hint"
+            android:textColorHint="#bbbbbb"
+            android:textSize="18sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/eMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/email_text"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#bbbbbb"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/passWord_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:textColorHint="#bbbbbb"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/buttonDividedr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextSignLayout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/button_divider" />
+
+    <Button
+        android:id="@+id/signupButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextSignLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="14dp"
+        android:layout_toLeftOf="@+id/buttonDividedr"
+        android:background="@drawable/button_custom"
+        android:text="@string/signup_button_label"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextSignLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="14dp"
+        android:layout_toRightOf="@+id/buttonDividedr"
+        android:background="@drawable/button_custom"
+        android:text="@string/cancel_button_label"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.navneet.photochat.MainActivity" >
+
+    <item
+        android:id="@+id/action_edit_friends"
+        android:title="@string/menu_edit_friends_label">
+    </item>
+    <item
+        android:id="@+id/action_logout"
+        android:title="@string/action_logout">
+    </item>
+    <item
+        android:id="@+id/menu_camera_button"
+        android:icon="@drawable/camera"
+        android:showAsAction="always"
+        android:title="@string/menu_camera_string">
+    </item>
+
+</menu>
